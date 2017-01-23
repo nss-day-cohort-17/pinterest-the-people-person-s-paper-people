@@ -7,5 +7,13 @@ app.config(($routeProvider, $locationProvider)=> {
       controller: 'LoginCtrl',
       templateUrl: '/partials/login.html'
     })
+    .when('/topics', {
+      controller: 'TopicCtrl',
+      templateUrl: '/partials/topics.html'
+    })
+    .when('/crds', {
+      controller: 'CardsCtrl',
+      templateUrl: '/partials/topics.html'
+    })
     .otherwise({redirectTo: '/' })
 })
