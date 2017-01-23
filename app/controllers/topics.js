@@ -1,2 +1,8 @@
 console.log('topics')
-app.controller
+
+app.controller('TopicCtrl', function($scope, $http) {
+  $http.get('https://ppppproject-afa08.firebaseio.com/.json')
+  .then(function(topics) {
+    console.log(topics)
+  })
+})
