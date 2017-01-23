@@ -1,3 +1,3 @@
 console.log('hi')
 
-const app = angular.module('pintApp', ['ngRoute'])
+const app = angular.module('pintApp', ['ngRoute', 'ngMaterial'])
