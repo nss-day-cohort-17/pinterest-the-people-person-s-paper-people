@@ -7,11 +7,11 @@ app.config(($routeProvider, $locationProvider)=> {
       controller: 'LoginCtrl',
       templateUrl: '/partials/login.html'
     })
-    .when('/topics' {
+    .when('/topics', {
       controller: 'TopicCtrl',
       templateUrl: '/partials/topics.html'
     })
-    .when('/crds' {
+    .when('/crds', {
       controller: 'CardsCtrl',
       templateUrl: '/partials/topics.html'
     })
