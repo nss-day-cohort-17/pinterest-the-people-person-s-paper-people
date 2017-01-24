@@ -1,4 +1,4 @@
-console.log('topics')
+// console.log('topics')
 
 app.controller('TopicCtrl', function($scope, cardFactory) {
   cardFactory.getList()
