@@ -1,20 +1,20 @@
 <h1>Login</h1>
 
-<form name="colorForm">
+<form name="userNameForm">
   <md-input-container>
     <label>Username</label>
-    <input name="favoriteColor" ng-model="favoriteColor" required>
-    <div ng-messages="colorForm.favoriteColor.$error">
+    <input name="userName" ng-model="userName" required>
+    <div ng-messages="userNameForm.userName.$error">
       <div ng-message="required">This is required!</div>
     </div>
   </md-input-container>
 </form>
 
-<form name="colorForm">
+<form name="passwordForm">
   <md-input-container>
     <label>Password</label>
-    <input name="favoriteColor" ng-model="favoriteColor" required>
-    <div ng-messages="colorForm.favoriteColor.$error">
+    <input name="password" ng-model="password" required>
+    <div ng-messages="passwordForm.password.$error">
       <div ng-message="required">This is required!</div>
     </div>
   </md-input-container>

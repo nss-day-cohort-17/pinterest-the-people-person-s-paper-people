@@ -1,3 +1,7 @@
 body {
 	background: lightgrey;
 }
+
+card > img {
+	max-width: 250px;
+}
