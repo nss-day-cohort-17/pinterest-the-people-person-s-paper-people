@@ -22,3 +22,7 @@ body {
 .mainCard {
   width: 50%;
 }
+
+card > img {
+	max-width: 250px;
+}

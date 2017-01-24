@@ -14,6 +14,11 @@
 
     <div class="container">
         <div ng-app="pintApp">
+            <md-nav-bar md-selected-nav-item="currentNavItem">
+                <md-nav-item md-nav-href="/" name="page1">Home</md-nav-item>
+                <md-nav-item md-nav-sref="/register" name="page2">Register</md-nav-item>
+                <md-nav-item md-nav-href="#/topics" name="page3">Topics</md-nav-item>
+            </md-nav-bar>
             <div ng-view></div>
         </div>
     </div>
@@ -29,7 +34,7 @@
     <script src="/app/controllers/loginController.js"></script>
     <script src="/app/controllers/topics.js"></script>
     <script src="/app/controllers/cards.js"></script>
-
+    <script src="/app/factory/cardFac.js"></script>
 
 </body>
 </html>
