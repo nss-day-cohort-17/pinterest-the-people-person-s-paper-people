@@ -11,9 +11,9 @@ app.config(($routeProvider, $locationProvider)=> {
       controller: 'TopicCtrl',
       templateUrl: '/partials/topics.html'
     })
-    .when('/crds', {
+    .when('/cards', {
       controller: 'CardsCtrl',
-      templateUrl: '/partials/topics.html'
+      templateUrl: '/partials/cards.html'
     })
     .otherwise({redirectTo: '/' })
 })
