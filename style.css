@@ -1,5 +1,29 @@
-/*body {*/
-	/*background: lightgrey;
-}*/
 
-/*button styling*/
+body {
+  background: lightgrey;
+}
+
+.btn1 {
+  background-color: white;
+  width: 20%;
+  display: inline;
+}
+
+.btn2 {
+  background-color: white;
+  width: 20%;
+  display: right
+}
+
+
+.md-svb-icon {
+  color: red;
+}
+
+.mainCard {
+  width: 50%;
+}
+
+card > img {
+	max-width: 250px;
+}
