@@ -1,7 +1,8 @@
 console.log('config')
 
-app.config(($routeProvider, $locationProvider)=> {
+app.config(($routeProvider, $locationProvider, $mdIconProvider)=> {
     $locationProvider.hashPrefix('');
+    $mdIconProvider.fontSet('md', 'material-icons')
     $routeProvider
     .when('/', {
       controller: 'LoginCtrl',

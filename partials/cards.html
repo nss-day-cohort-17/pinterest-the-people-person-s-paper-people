@@ -1,12 +1,67 @@
+<link rel="stylesheet" type="text/css" href="/partials/card.css">
+
+   <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
    <md-card class="mainCard" md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
         <md-card-title>
           <md-card-title-text>
             <span class="md-headline">Image</span>
             <span class="md-subhead">Title</span>
             <span class="md-subhead">Description</span>
-          <div layour="row" layout-align="center center">
+
+            <md-button class="btn1"> Pin </md-button>
+
+<h1>Cards Structure</h1>
+
+          <div layout="row" layout-align="center center">
             <md-button class="btn1"> <md-icon md-font-set="md">favorite</md-icon></md-button>
             <md-button class="btn2"> <md-icon md-font-set="md">delete</md-icon></md-button>
-          </div>
-       </md-card-title>
+            </div>
         </md-card-title-text>
+      </md-card-title>
+
+
+<h1 class="md-display-3"></h1>
+
+<md-card class="cardThemeColor">
+<md-card-title>
+    <md-card-title-media>
+      <div class="md-media-sm card-media" layout>
+        <md-button ...>
+        <img class="png-icon" src="http://www.bumperstickerz.com/images/10000238-00-04-00-00_lg.png" 
+        style="width: 6em; height: 6em;">
+        </md-button>
+      </div>
+    </md-card-title-media>
+    <md-card-title-text>
+      <span class="md-headline">{{name}}</span>
+      <span class="md-subheadDescription">Bears, Beets, Battlestar Galactica.</span>
+    </md-card-title-text>
+  </md-card-title>
+</md-card>
+
+<div class="container fluid">
+    <div class="row">
+        <form ng-submit="">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                    <i class="material-icons"></i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" id="sample6" placeholder="Search Topic">
+                    <label class="mdl-textfield__label" for="sample-expandable"></label>
+                    <md-button type="submit" class="btn1" value=""> Search </md-button>
+                </div>
+              </div>
+        </form>
+    </div>
+</div>
+
+<div layout="row">
+  <div flex>First item in row</div>
+  <div flex>Second item in row</div>
+</div>
+<div layout="column">
+  <div flex>First item in column</div>
+  <div flex>Second item in column</div>
+</div>
+
