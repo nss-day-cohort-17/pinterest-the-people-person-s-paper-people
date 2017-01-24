@@ -1,3 +1,19 @@
 body {
-	background: lightgrey;
+  background: lightgrey;
+}
+
+.btn1 {
+  color: darkblue;
+  background-color: lightgrey;
+  width: 20%;
+}
+
+.btn2 {
+  color: red;
+  background-color: lightgrey;
+  width: 20%;
+}
+
+card > img {
+	max-width: 250px;
 }
