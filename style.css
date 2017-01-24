@@ -13,3 +13,7 @@ body {
   background-color: lightgrey;
   width: 20%;
 }
+
+card > img {
+	max-width: 250px;
+}

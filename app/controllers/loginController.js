@@ -1,9 +1,4 @@
-app.config(($routeProvider, $locationProvider)=> {
-    $locationProvider.hashPrefix('');
-    $routeProvider
-    .when('/', {
-      controller: 'LoginControllerCtrl',
-      templateUrl: '/partials/loginController.html'
-    })
-    .otherwise({redirectTo: '/' })
+console.log('controller')
+
+app.controller('LoginCtrl', function($scope) {
 })
