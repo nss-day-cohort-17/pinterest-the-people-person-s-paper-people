@@ -1,14 +1,4 @@
-app.config(($routeProvider, $locationProvider)=> {
-    $locationProvider.hashPrefix('');
-    $routeProvider
-    .when('/', {
-      controller: 'CardsCtrl',
-      templateUrl: '/partials/cards.html'
-    })
-    .otherwise({redirectTo: '/' })
-})
-
-
-.controller('CardsCtrl', function() {
-  console.log('blaaaah')
+app.controller('CardsCtrl', function($scope, $http) {
+  $http
+  .put(`https://ppppproject-afa08.firebaseio.com/boards`)
 })

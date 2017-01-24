@@ -4,7 +4,7 @@ app.factory('cardFactory', function($http) {
   return {
     getList : ()=> {
       return $http
-      .get('')
+      .get('https://ppppproject-afa08.firebaseio.com/.json')
       .then(function(data) {
         console.log(data)
         return data
@@ -12,6 +12,9 @@ app.factory('cardFactory', function($http) {
       .catch(()=> {
         alert('failed load')
       })
-    }
+    },
+    // setPin : () => {
+    //   .put('https://ppppproject-afa08.firebaseio.com/boards')
+    // }
   }
 })
