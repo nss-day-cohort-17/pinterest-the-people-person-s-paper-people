@@ -13,8 +13,5 @@ app.factory('cardFactory', function($http) {
         alert('failed to load')
       })
     },
-    // setPin : () => {
-    //   .put('https://ppppproject-afa08.firebaseio.com/boards')
-    // }
   }
 })
