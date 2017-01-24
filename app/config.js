@@ -8,13 +8,13 @@ app.config(($routeProvider, $locationProvider, $mdIconProvider)=> {
       controller: 'LoginCtrl',
       templateUrl: '/partials/login.html'
     })
-    .when('/topics', {
-      controller: 'TopicCtrl',
-      templateUrl: '/partials/topics.html'
-    })
     .when('/cards', {
       controller: 'CardsCtrl',
       templateUrl: '/partials/cards.html'
+    })
+    .when('/boards', {
+      controller: 'BoardsCtrl',
+      templateUrl: 'partials/boards.html'
     })
     .otherwise({redirectTo: '/' })
 })
