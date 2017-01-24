@@ -1,10 +1,19 @@
 // console.log('topics')
 
-app.controller('TopicCtrl', function($scope, $http) {
-  $http.get('https://ppppproject-afa08.firebaseio.com/.json')
-  .then(function(topics) {
-    // console.log(topics)
-  $scope.topicCards = topics.data.topics
-  console.log($scope.topicCards)
+app.controller('TopicCtrl', function($scope, cardFactory) {
+  cardFactory.getList()
+  .then((data)=> {
+    console.log(data.data)
   })
+
+  let getPin = function (uid, boardid, url, title) {
+
+    let pin = {
+      "uid": uid,
+      "boardid": boardid,
+      "url": url,
+      "title": title
+    }
+  }
+  $http.post('https://ppppproject-afa08.firebaseio.com/.json', JSON.stringify(pin))
 })
