@@ -6,8 +6,8 @@ app.factory('cardFactory', function($http) {
       return $http
       .get('https://ppppproject-afa08.firebaseio.com/.json')
       .then(function(data) {
-        console.log(data.data)
-        return data
+        // console.log(data.data)
+        return data.data
       })
       .catch(()=> {
         alert('failed to load')

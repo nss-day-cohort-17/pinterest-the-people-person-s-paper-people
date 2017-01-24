@@ -2,8 +2,8 @@
 app.controller('TopicCtrl', function($scope, $http, cardFactory) {
   cardFactory.getList()
   .then((data)=> {
-    console.log(data.data)
-
+    $scope.topicCard = data.topics;
+    // console.log($scope.topic)
   })
 })
 //   let getPin = function (uid, boardid, url, title) {
