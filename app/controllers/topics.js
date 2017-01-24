@@ -4,14 +4,15 @@ app.controller('TopicCtrl', function($scope, $http, cardFactory) {
   cardFactory.getList()
   .then((data)=> {
     console.log(data.data)
+    console.log($scope.topics = data.data.topics);
   })
 
   let getPin = function (uid, boardid, url, title) {
 
     let pin = {
-      "uid": uid,
+      "uid": 
       "boardid": boardid,
-      "url": url,
+      "url": 
       "title": title
     }
   }
