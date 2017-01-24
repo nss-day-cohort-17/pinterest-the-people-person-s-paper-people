@@ -7,7 +7,6 @@ app.controller('CardsCtrl', function() {
 
 app.config(function($mdIconProvider){
   $mdIconProvider.fontSet('md', 'material-icons')
-
-app.controller('CardsCtrl', function($scope) {
-
 })
+
+// app.controller('CardsCtrl' function())
