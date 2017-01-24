@@ -3,13 +3,22 @@ body {
 }
 
 .btn1 {
-  color: darkblue;
-  background-color: lightgrey;
+  background-color: white;
   width: 20%;
+  display: inline;
 }
 
 .btn2 {
-  color: red;
-  background-color: lightgrey;
+  background-color: white;
   width: 20%;
+  display: right
+}
+
+
+.md-svb-icon {
+  color: red;
+}
+
+.mainCard {
+  width: 50%;
 }
