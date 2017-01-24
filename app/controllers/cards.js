@@ -1,8 +1,10 @@
 
-app.controller('CardsCtrl', function() {
-  console.log('blaaaah')
+app.controller('CardsCtrl', function($scope, $http, cardFactory) {
+  cardFactory.getList()
+  .then((data)=> {
+    $scope.topicCard = data.topics;
+  })
 })
-
 // added md-icon config
 
 app.config(function($mdIconProvider){
