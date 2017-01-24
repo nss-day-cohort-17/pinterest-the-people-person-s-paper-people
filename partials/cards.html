@@ -1,8 +1,11 @@
 <link rel="stylesheet" type="text/css" href="/partials/card.css">
-<md-card class="cardThemeColor">
-<md-card-title>
+
+
+  <md-card class="cardThemeColor">
+  <md-card-title>
     <md-card-title-media>
       <div class="md-media-sm card-media" layout>
+
         <div layout="row" layout-align="start center">
             <md-icon>
                 <img class="png-icon" src="http://www.bumperstickerz.com/images/10000238-00-04-00-00_lg.png" 
@@ -36,18 +39,16 @@
   </md-card-title>
 </md-card>
 
-<h1 class="md-display-3">Title</h1>
-<div layout="row">
-  <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
-    <div flex>First item in row</div>
-      <md-card class="mainCard" md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
+
+  <div layout="row" layout-wrap>
+
+
+      <md-card ng-repeat="topic in topicCard">{{topic.title}}<img class="images" ng-src="{{topic.img}}" class="mainCard" md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
         <md-card-title>
           <md-card-title-text>
-            <span class="md-headline">Image</span>
-            <span class="md-subhead">Title</span>
+
             <span class="md-subhead">Description</span>
 
-            <md-button class="btn1"> Pin </md-button>
 
           <div layout="row" layout-align="center center">
             <md-button class="btn1"> <md-icon md-font-set="md">favorite</md-icon></md-button>
@@ -55,10 +56,6 @@
             </div>
           </md-card-title-text>
         </md-card-title>
-</div>
-
-
-<div layout="column">
-  <div flex>First item in column</div>
-</div>
+     </md-card>
+    </div>
 
