@@ -6,11 +6,11 @@ app.factory('cardFactory', function($http) {
       return $http
       .get('https://ppppproject-afa08.firebaseio.com/.json')
       .then(function(data) {
-        console.log(data)
+        console.log(data.data)
         return data
       })
       .catch(()=> {
-        alert('failed load')
+        alert('failed to load')
       })
     },
     // setPin : () => {
