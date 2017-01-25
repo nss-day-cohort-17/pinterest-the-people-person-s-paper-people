@@ -1,10 +1,10 @@
-app.factory('toJSONFactory', function($http, $scope) {
-	let boardInfo = {
-      "uid": "uid",
-      "boardid": "boardid",
-      "title": title
-      // "url": "url",
-    }
+// app.factory('toJSONFactory', function($http, $scope) {
+// 	let boardInfo = {
+//       "uid": "uid",
+//       "boardid": "boardid",
+//       "title": title
+//       // "url": "url",
+//     }
 
 	// return {
 	// 	getBoard : () =>
