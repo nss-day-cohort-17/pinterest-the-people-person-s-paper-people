@@ -16,5 +16,9 @@ app.config(($routeProvider, $locationProvider, $mdIconProvider)=> {
       controller: 'CardsCtrl',
       templateUrl: '/partials/cards.html'
     })
+    .when('/pinBoard', {
+      controller: 'BoardCtrl',
+      templateUrl: '/partials/pinBoard.html'
+    })
     .otherwise({redirectTo: '/' })
 })

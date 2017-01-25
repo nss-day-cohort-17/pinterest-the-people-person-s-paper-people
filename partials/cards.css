@@ -1,0 +1,21 @@
+.btn1:not([disabled]):hover {
+  background-color: #536DFE;
+  color: white;
+}
+
+.md-button {
+  color : currentColor;
+}
+
+.cardThemeColor {
+    background-color: #1976D2;
+    border-radius: 1em;
+}
+.md-subheadDescription {
+    color: white;
+    text-align: right;
+}
+
+.png-icon {
+    border-radius: .2em;
+}
