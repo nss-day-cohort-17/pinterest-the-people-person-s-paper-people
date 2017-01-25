@@ -7,5 +7,3 @@ app.controller('CardCtrl', function($scope, $http, cardFactory) {
 
 	})
 })
-
-// app.controller('CardsCtrl' function())
