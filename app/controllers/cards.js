@@ -3,7 +3,7 @@ app.controller('CardsCtrl', function($scope, $http, cardFactory) {
   cardFactory.getList()
   .then((data)=> {
 
-    $scope.topics = data.topics;
+    $scope.topicCard = data.topics;
     console.log($scope.topics)
 
 	})
