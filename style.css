@@ -15,17 +15,17 @@ body {
   display: right
 }
 
-
-.md-svb-icon {
-  color: red;
-}
-
 .mainCard {
-  width: 50%;
+  max-width: 50%;
+  display: inline-block;
 }
 
 card > img {
-	max-width: 250px;
+	max-width: auto;
+}
+
+.images {
+  max-width: 250px;
 }
 
 /*nav bar highlight color*/
