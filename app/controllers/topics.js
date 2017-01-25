@@ -1,4 +1,4 @@
-// console.log('topics')
+console.log('topics')
 app.controller('TopicCtrl', function($scope, $http, cardFactory) {
   cardFactory.getList()
   .then((data)=> {
@@ -15,4 +15,3 @@ app.controller('TopicCtrl', function($scope, $http, cardFactory) {
       "title": ""
     };
   }
-})
