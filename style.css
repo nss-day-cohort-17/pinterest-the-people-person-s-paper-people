@@ -15,15 +15,26 @@ body {
   display: right
 }
 
-
-.md-svb-icon {
-  color: red;
-}
-
 .mainCard {
-  width: 50%;
+  max-width: 50%;
+  display: inline-block;
 }
 
 card > img {
-	max-width: 250px;
+	max-width: auto;
+}
+
+.images {
+  max-width: 250px;
+}
+
+/*nav bar highlight color*/
+.md-accent{
+  /*padding: 50px;
+  margin: 20px;*/
+  color: #455A64 !important; 
+}
+md-nav-bar md-nav-ink-bar{
+  color:  #18FFFF;
+  background-color: #18FFFF;
 }

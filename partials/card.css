@@ -13,4 +13,9 @@
 }
 .md-subheadDescription {
     color: white;
+    text-align: right;
+}
+
+.png-icon {
+    border-radius: .2em;
 }
