@@ -1,9 +1,9 @@
 {
   "topics" :
   [{
-    "type": "kitties",
-    "title": "Kitty!",
-    "description": "This kitty is so cute.",
+    "type": "cats",
+    "title": "Sad kitty!",
+    "description": "This kitty is so sad.",
     "img": "http://cdn.attackofthecute.com/February-20-2012-20-58-35-catsncats.tumblr1.jpeg"
   },
   {
@@ -14,14 +14,116 @@
   },
    {
     "type": "pastries",
-    "title": "Go nuts for donuts!",
+    "title": "Go Nuts for Donuts!",
     "description": "I like donuts. A Lot.",
     "img": "https://s3-media2.fl.yelpcdn.com/bphoto/KxFdYhnvGMRbUVfaskhKww/348s.jpg"
   },
    {
-    "type": "puppies",
-    "title": "Puppy chases tail, finds self.",
+    "type": "dogs",
+    "title": "Puppy Chases Tail, Finds Self.",
     "description": "Cute and so, so zen.",
     "img": "https://s-media-cache-ak0.pinimg.com/736x/69/3a/dc/693adcc306fdacd7829852bf51f438c2.jpg"
+  },
+  {
+    "type": "cats",
+    "title": "Cat Burrito!",
+    "description": "What has he done?",
+    "img": "https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"
+  },
+  {
+    "type": "cars",
+    "title": "Tesla Model S",
+    "description": "Like THIS car needs a description",
+    "img": "https://8096-presscdn-0-43-pagely.netdna-ssl.com/wp-content/uploads/2016/03/Tesla-Model-S-Exterior.jpg"
+  },
+   {
+    "type": "pastries",
+    "title": "Cinnamon Roll",
+    "description": "Cinnamon-y",
+    "img": "http://divascancook.com/wp-content/uploads/2015/12/homemade-cinnamon-rolls-recipe.jpg"
+  },
+   {
+    "type": "dogs",
+    "title": "CUPCAKE!!",
+    "description": "Crazy eyes",
+    "img": "https://www.rover.com/blog/wp-content/uploads/2015/05/dog-candy-junk-food-599x340.jpg"
+  },
+   {
+    "type": "cats",
+    "title": "Kittens",
+    "description": "Tell us we're pretty!",
+    "img": "http://www.pets4homes.co.uk/images/articles/3448/large/six-health-essentials-that-you-should-monitor-in-your-kittens-first-few-weeks-of-life-56a6114cb4003.jpg"
+  },
+  {
+    "type": "cars",
+    "title": "Michael Scott",
+    "description": "World's Best Boss",
+    "img": "https://s-media-cache-ak0.pinimg.com/600x315/85/83/0f/85830f1843b356b3db8bc28bd34122ea.jpg"
+  },
+   {
+    "type": "pastries",
+    "title": "Bear Claw",
+    "description": "Almond-y?",
+    "img": "http://www.sonomamuffin.com/wp-content/uploads/2013/10/DSCF1324.jpg"
+  },
+   {
+    "type": "dogs",
+    "title": "Australian Cattle Dog",
+    "description": "Best dog breed ever",
+    "img": "https://s-media-cache-ak0.pinimg.com/736x/a7/da/78/a7da780234ef4c4d195330d676e20ec5.jpg"
+  },
+  {
+    "type": "cats",
+    "title": "Maine Coon",
+    "description": "Big spoon",
+    "img": "https://cdn.pixabay.com/photo/2015/12/12/14/55/cat-1089609_960_720.jpg"
+  },
+  {
+    "type": "cars",
+    "title": "There's no road here!",
+    "description": "...",
+    "img": "https://img.buzzfeed.com/buzzfeed-static/static/2015-12/1/23/enhanced/webdr14/enhanced-31373-1449030963-1.jpg"
+  },
+   {
+    "type": "pastries",
+    "title": "Go Nuts for Donuts!",
+    "description": "I like donuts. A Lot.",
+    "img": "https://s3-media2.fl.yelpcdn.com/bphoto/KxFdYhnvGMRbUVfaskhKww/348s.jpg"
+  },
+   {
+    "type": "dogs",
+    "title": "Puppy Chases Tail, Finds Self.",
+    "description": "Cute and so, so zen.",
+    "img": "https://s-media-cache-ak0.pinimg.com/736x/69/3a/dc/693adcc306fdacd7829852bf51f438c2.jpg"
+  },
+  {
+    "type": "cats",
+    "title": "Cat Burrito!",
+    "description": "What has he done?",
+    "img": "https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"
+  },
+  {
+    "type": "cars",
+    "title": "Tesla Model S",
+    "description": "Like THIS car needs a description",
+    "img": "https://8096-presscdn-0-43-pagely.netdna-ssl.com/wp-content/uploads/2016/03/Tesla-Model-S-Exterior.jpg"
+  },
+   {
+    "type": "pastries",
+    "title": "Cinnamon Roll",
+    "description": "Cinnamon-y",
+    "img": "http://divascancook.com/wp-content/uploads/2015/12/homemade-cinnamon-rolls-recipe.jpg"
+  },
+   {
+    "type": "dogs",
+    "title": "CUPCAKE!!",
+    "description": "Crazy eyes",
+    "img": "https://www.rover.com/blog/wp-content/uploads/2015/05/dog-candy-junk-food-599x340.jpg"
+  },
+   {
+    "type": "cats",
+    "title": "Kittens",
+    "description": "Tell us we're pretty!",
+    "img": "http://www.pets4homes.co.uk/images/articles/3448/large/six-health-essentials-that-you-should-monitor-in-your-kittens-first-few-weeks-of-life-56a6114cb4003.jpg"
   }]
 }

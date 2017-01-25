@@ -12,7 +12,7 @@ app.config(($routeProvider, $locationProvider, $mdIconProvider)=> {
       controller: 'TopicCtrl',
       templateUrl: '/partials/topics.html'
     })
-    .when('/cards', {
+    .when('/home', {
       controller: 'CardsCtrl',
       templateUrl: '/partials/cards.html'
     })

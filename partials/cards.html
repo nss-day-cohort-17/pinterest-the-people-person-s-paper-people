@@ -15,7 +15,7 @@
       </div>
     </md-card-title-media>
     <md-card-title-text>
-      <span class="md-headline">{{name}}</span>
+      <span class="md-headline"></span>
       <span class="md-subheadDescription">Bears, Beets, Battlestar Galactica.</span>
 
         <form ng-submit="">
@@ -27,10 +27,10 @@
                 <div class="mdl-textfield__expandable-holder">
                     <md-input-container>
                     <label>Search Topic</label>
-                    <input type="text" ng-model="color" required md-maxlength=" ">
+                    <input type="text" ng-model="topicSearch" required md-maxlength=" ">
                     </md-input-container>
                     <label class="mdl-textfield__label" for="sample-expandable"></label>
-                    <md-button type="submit" class="btn1" value=""> Search </md-button>
+                    <md-button type="submit" ng-click="topicSearch" class="btn1" value=""> Search </md-button>
                 </div>
                 </div>
               </div>
@@ -46,7 +46,8 @@
       <md-card ng-repeat="topic in topicCard">{{topic.title}}<img class="images" ng-src="{{topic.img}}" class="mainCard" md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
         <md-card-title>
           <md-card-title-text>
-
+            <span class="md-headline">Headline</span>
+            <span class="md-subhead">Title</span>
             <span class="md-subhead">Description</span>
 
 
@@ -56,5 +57,7 @@
             </div>
           </md-card-title-text>
         </md-card-title>
-     </md-card>
-    </div>
+
+<div layout="column">
+  <div flex>First item in column</div>
+</div>
