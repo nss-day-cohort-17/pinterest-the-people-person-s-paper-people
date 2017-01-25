@@ -1,4 +1,4 @@
-// console.log('controller')
+console.log('controller')
 app.controller('LoginCtrl', function($scope, $http) {
 
 })
