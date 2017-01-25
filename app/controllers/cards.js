@@ -6,4 +6,3 @@ app.controller('CardCtrl', function($scope, $http, cardFactory) {
     console.log($scope.topics)
 
 	})
-})

@@ -27,3 +27,14 @@ body {
 card > img {
 	max-width: 250px;
 }
+
+/*nav bar highlight color*/
+.md-accent{
+  /*padding: 50px;
+  margin: 20px;*/
+  color: #455A64 !important; 
+}
+md-nav-bar md-nav-ink-bar{
+  color:  #18FFFF;
+  background-color: #18FFFF;
+}
