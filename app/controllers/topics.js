@@ -4,6 +4,8 @@ app.controller('TopicCtrl', function($scope, $http, cardFactory) {
   .then((data)=> {
     console.log(data)
     console.log($scope.topics = data.topics);
+    console.log($scope.topics)
+    $scope.
   })
 
   let getPin = function (uid, boardid, url, title) {
