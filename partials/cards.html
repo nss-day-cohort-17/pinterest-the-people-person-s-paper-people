@@ -1,34 +1,37 @@
+
+
+<h3 class="left">Hello Dwight</h3>
+
   <md-card class="cardThemeColor">
+    <!-- <span class="md-headline">{{name}}</span> -->
+      <span class="md-subheadDescription">Bears, Beets, Battlestar Galactica.</span>
   <md-card-title>
     <md-card-title-media>
-      <div class="md-media-sm card-media" layout>
-
+      <div layout-xs="column" class="md-media-sm card-media">
         <div layout="row" layout-align="start center">
             <md-icon>
-                <img class="png-icon" src="http://www.bumperstickerz.com/images/10000238-00-04-00-00_lg.png" 
+                <img class="png-icon" src="http://www.bumperstickerz.com/images/10000238-00-04-00-00_lg.png"
                 style="width: 8em; height: 5em;">
             </md-icon>
         </div>
       </div>
     </md-card-title-media>
+    
     <md-card-title-text>
-      <span class="md-headline"></span>
-      <span class="md-subheadDescription">Bears, Beets, Battlestar Galactica.</span>
-
         <form ng-submit="">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                 <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
                     <i class="material-icons"></i>
                 </label>
                 <div layout="row" layout-align="end">
-                <div class="mdl-textfield__expandable-holder">
-                    <md-input-container>
-                    <label>Search Topic</label>
-                    <input type="text" ng-model="topicSearch" required md-maxlength=" ">
-                    </md-input-container>
-                    <label class="mdl-textfield__label" for="sample-expandable"></label>
-                    <md-button type="submit" ng-click="topicSearch" class="btn1" value=""> Search </md-button>
-                </div>
+                    <div class="mdl-textfield__expandable-holder" layout-align>
+                        <md-input-container layout-flex>
+                        <label>Search Topic</label>
+                        <input type="text" ng-model="topicSearch" required md-maxlength=" ">
+                        </md-input-container>
+                        <label class="mdl-textfield__label" for="sample-expandable"></label>
+                        <md-button type="submit" ng-click="topicSearch" class="btn1" value=""> Search </md-button>
+                    </div>
                 </div>
               </div>
         </form>
@@ -36,6 +39,12 @@
   </md-card-title>
 </md-card>
 
+
+<section layout="row" layout-align="center center">
+  <md-button class="groupX left md-raised">Create Board</md-button>
+  <md-button class="groupX middle md-raised">Create Pin</md-button>
+  <md-button class="md-raised" ng-href="https://www.buzzfeed.com/rachelwmiller/all-we-do-is-pin?utm_term=.wuZapM9qg#.gvJOPZMgD" class="groupX right">Get A Life</md-button>
+</section>
 
   <div layout="row" layout-wrap>
 
@@ -56,7 +65,6 @@
         </md-card-title>
 </div>
 
-
 <div layout="column">
-  <div flex>First item in column</div>
+  <div flex>My Boards Load here from Firebase<br>Load board names based on ID and likely img</div>
 </div>
