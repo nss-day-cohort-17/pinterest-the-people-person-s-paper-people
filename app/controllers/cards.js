@@ -1,3 +1,4 @@
+// will load boards automatically
 
 app.controller('CardsCtrl', function($scope, $http, cardFactory) {
   cardFactory.getList()
@@ -6,5 +7,3 @@ app.controller('CardsCtrl', function($scope, $http, cardFactory) {
     $scope.topics = data.data
     //console.log($scope.topics)
   })
-
-})

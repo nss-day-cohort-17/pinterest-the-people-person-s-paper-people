@@ -11,3 +11,4 @@ $scope.newPin = function () {
       $http.post('https://pintrest-app.firebaseio.com/pin/.json', JSON.stringify(pinCard))
     }
 })
+
