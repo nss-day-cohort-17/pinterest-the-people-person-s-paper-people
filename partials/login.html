@@ -1,22 +1,32 @@
-<link rel="stylesheet" type="text/css" href="/partials/login.css">
 <h1>Login</h1>
 
-<form name="userNameForm">
+<div layout="column" layout-align="start start">
+<form name="userNameForm" name="passwordForm" ng-submit="login()">
   <md-input-container>
     <label>Username</label>
-    <input name="userName" ng-model="userName" required>
+    <input name="userName" ng-model="email" required>
     <div ng-messages="userNameForm.userName.$error">
       <div ng-message="required">This is required!</div>
     </div>
   </md-input-container>
-</form>
-
-<form name="passwordForm">
+  <br>
   <md-input-container>
     <label>Password</label>
-    <input name="password" ng-model="password" required>
+    <!-- <input name="password" ng-model="password" required> -->
+    <input ng-hide="showpassword" type="password" ng-model="password" required="">
     <div ng-messages="passwordForm.password.$error">
       <div ng-message="required">This is required!</div>
     </div>
+      <md-button type="submit" class="log1">Login</md-button>
   </md-input-container>
 </form>
+</div>
+
+<br>
+<div layout="column" layout-align="end start">
+<a>Not a member yet? Click the red button.</a>
+<br>
+<a href="http://localhost:8080/#/register">
+  <md-button type="submit" class="reg1"> Register </md-button>
+</a>
+</div>
