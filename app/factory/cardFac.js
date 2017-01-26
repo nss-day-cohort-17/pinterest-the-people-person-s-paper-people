@@ -12,6 +12,6 @@ app.factory('cardFactory', function($http) {
       .catch(()=> {
         alert('failed to load')
       })
-    }
+    },
   }
 })
