@@ -1,4 +1,5 @@
 // will load boards automatically
+
 app.controller('CardsCtrl', function($scope, $http, cardFactory) {
 
    cardFactory.getList()
@@ -10,4 +11,5 @@ app.controller('CardsCtrl', function($scope, $http, cardFactory) {
 
 	 })
 })
- added md-icon config
+// added md-icon config
+
