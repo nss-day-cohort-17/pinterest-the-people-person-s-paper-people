@@ -4,14 +4,14 @@ app.factory('cardFactory', function($http) {
   return {
     getList : ()=> {
       return $http
-      .get('https://ppppproject-afa08.firebaseio.com/.json')
+      .get('https://pintrest-app.firebaseio.com/pin/.json')
       .then(function(data) {
-        //console.log(data.data)
-        return data.data
+        //console.log(data)
+        return data
       })
       .catch(()=> {
         alert('failed to load')
       })
-    }
+    },
   }
 })

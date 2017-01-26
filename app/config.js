@@ -1,6 +1,29 @@
 console.log('config')
 
-app.config(($routeProvider, $locationProvider, $mdIconProvider)=> {
+
+app.config(($routeProvider, $locationProvider, $mdIconProvider)=> { 
+  
+  // firebase auth
+firebase.initializeApp({
+    apiKey: "AIzaSyBNVYJAHD5iy2Kp5lB_Cgrs2Y-qaWvH3mo",
+    authDomain: "ppppproject-afa08.firebaseapp.com",
+    databaseURL: "https://ppppproject-afa08.firebaseio.com",
+    storageBucket: "ppppproject-afa08.appspot.com",
+    messagingSenderId: "390130747860"
+    })
+
+// checking for auth
+const checkForAuth = {
+      checkForAuth ($location) {
+        const authReady = firebase.auth().onAuthStateChanged(user => {
+          authReady()
+          if (!user) {
+            $location.url('/')
+          }
+        })
+      }
+    }
+
     $locationProvider.hashPrefix('');
     $mdIconProvider.fontSet('md', 'material-icons')
     $routeProvider
@@ -12,7 +35,7 @@ app.config(($routeProvider, $locationProvider, $mdIconProvider)=> {
       controller: 'TopicCtrl',
       templateUrl: '/partials/topics.html'
     })
-    .when('/cards', {
+    .when('/home', {
       controller: 'CardsCtrl',
       templateUrl: '/partials/cards.html'
     })
@@ -20,5 +43,10 @@ app.config(($routeProvider, $locationProvider, $mdIconProvider)=> {
       controller: 'BoardCtrl',
       templateUrl: '/partials/pinBoard.html'
     })
+    .when('/register', {
+      controller: 'RegisterCtrl',
+      templateUrl: '/partials/register.html'
+    })
     .otherwise({redirectTo: '/' })
 })
+

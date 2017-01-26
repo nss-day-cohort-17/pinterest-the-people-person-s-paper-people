@@ -3,11 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Angular Pinterest</title>
+        
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
         <link rel="stylesheet" type="text/css" href="/bower_components/angular-material/angular-material.min.css">
         <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/partials/cards.css">
+        <link rel="stylesheet" type="text/css" href="/partials/login.css">
 </head>
 <body>
 
@@ -16,15 +19,20 @@
 
             <md-nav-bar atmd-selected-nav-item="currentNavItem">
                 <md-nav-item md-nav-href="/" name="page1" class="red">Login</md-nav-item>
-                <md-nav-item md-nav-sref="/register" name="page2" class="bingoBop">Search All</md-nav-item>
-                <md-nav-item md-nav-href="#/topics" name="page3" class="bingoBop">Home</md-nav-item>
+                <md-nav-item md-nav-href="#/topics" name="page2" class="bingoBop">Search All</md-nav-item>
+                <md-nav-item md-nav-href="#/home" name="page3" class="bingoBop">Home</md-nav-item>
             </md-nav-bar>
+                <div layout="column" layout-align="start end">
+                    <md-button type="submit" class="log2">Logout</md-button>
+                </div>
             <div ng-view></div>
 
 
         </div>
     </div>
 
+    
+    <script src="/bower_components/firebase/firebase.js"></script>
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
@@ -35,6 +43,7 @@
     <script src="/app/config.js"></script>
     <script src="/app/factory/cardFac.js"></script>
     <script src="/app/controllers/loginController.js"></script>
+    <script src="/app/controllers/register.js"></script>
     <script src="/app/controllers/topics.js"></script>
     <script src="/app/controllers/cards.js"></script>
     <script src="/app/controllers/pinBoard.js"></script>
