@@ -18,7 +18,11 @@
     </md-card-title-media>
     
     <md-card-title-text>
-        <form ng-submit="">
+
+      <span class="md-headline"></span>
+      <span class="md-subheadDescription">Bears, Beets, Battlestar Galactica.</span>
+
+        <form ng-submit="newPin()">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                 <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
                     <i class="material-icons"></i>
@@ -46,19 +50,23 @@
 </section>
 
   <div layout="row" layout-wrap>
-
-
-      <md-card ng-repeat="topic in topicCard">{{topic.title}}<img class="images" ng-src="{{topic.img}}" class="mainCard" md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
+    <md-card ng-repeat="inn in topics">
         <md-card-title>
+            {{inn.title}}
+        </md-card-title>
+        <img class="images" src="{{inn.url}}" class="mainCard">
+
           <md-card-title-text>
             <span class="md-headline">Headline</span>
             <span class="md-subhead">Title</span>
             <span class="md-subhead">Description</span>
 
-
-          <div layout="row" layout-align="center center">
+        <div layout="row" layout-align="center center">
             <md-button class="btn1"> <md-icon md-font-set="md">favorite</md-icon></md-button>
-            <md-button class="btn2"> <md-icon md-font-set="md">delete</md-icon></md-button>
+            <md-button ng-click="newPin()" class="btn2"><md-icon md-font-set="md">delete</md-icon></md-button>
+        </div>
+    </md-card>
+  </div>
             </div>
           </md-card-title-text>
         </md-card-title>

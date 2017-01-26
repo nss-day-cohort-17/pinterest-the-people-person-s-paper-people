@@ -1,25 +1,14 @@
 console.log('boardCtrl')
+app.controller('BoardCtrl', function($scope, $http){
+$scope.newPin = function () {
+      console.log('new pin button clicked')
+      let pinCard = {
+          "title": $scope.title,
+          "boardid": $scope.boardid,
+          "url": $scope.url
+      }
+      console.log(pinCard)
+      $http.post('https://pintrest-app.firebaseio.com/pin/.json', JSON.stringify(pinCard))
+    }
+})
 
-
-app.controller('BoardCtrl', function($scope) {
-    $scope.user = {
-      title: '',
-      email: 'ipsum@lorem.com',
-      company: '',
-    };
-
-    $scope.states = ('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS ' +
-    'MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI ' +
-    'WY').split(' ').map(function(state) {
-        return {abbrev: state};
-      });
-  })
-  .config(function($mdThemingProvider) {
-
-    // Configure a dark theme with primary foreground yellow
-
-    $mdThemingProvider.theme('docs-dark', 'default')
-      .primaryPalette('yellow')
-      .dark();
-
-  });
