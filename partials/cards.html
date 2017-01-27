@@ -19,10 +19,7 @@
     
     <md-card-title-text>
 
-      <span class="md-headline"></span>
-      <span class="md-subheadDescription">Bears, Beets, Battlestar Galactica.</span>
-
-        <form ng-submit="newPin()">
+        <!-- <form ng-submit="newPin()"> -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                 <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
                     <i class="material-icons"></i>
@@ -30,15 +27,15 @@
                 <div layout="row" layout-align="end">
                     <div class="mdl-textfield__expandable-holder" layout-align>
                         <md-input-container layout-flex>
-                        <label>Search Topic</label>
-                        <input type="text" ng-model="topicSearch" required md-maxlength=" ">
-                        </md-input-container>
+                        <label>Search My Pins</label>
+                        <input type="text" ng-model="pinSearch" class="search">
                         <label class="mdl-textfield__label" for="sample-expandable"></label>
-                        <md-button type="submit" ng-click="topicSearch" class="btn1" value=""> Search </md-button>
+                        <md-button type="submit" ng-click="pinSearch" class="btn1" value=""> Search </md-button>
+                        </md-input-container>
                     </div>
                 </div>
               </div>
-        </form>
+        <!-- </form> -->
     </md-card-title-text>
   </md-card-title>
 </md-card>
@@ -65,13 +62,9 @@
             <md-button class="btn1"> <md-icon md-font-set="md">favorite</md-icon></md-button>
             <md-button ng-click="newPin()" class="btn2"><md-icon md-font-set="md">delete</md-icon></md-button>
         </div>
-    </md-card>
-  </div>
-            </div>
           </md-card-title-text>
-        </md-card-title>
-</div>
+      </md-card-title>
+  </md-card>
 
-<div layout="column">
+        
 
-</div>

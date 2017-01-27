@@ -47,13 +47,13 @@ const checkForAuth = {
       controller: 'LoginCtrl',
       templateUrl: '/partials/login.html'
     })
+    // .when('/topics', {
+    //   controller: 'TopicCtrl',
+    //   templateUrl: '/partials/topics.html'
+    // })
     .when('/logout', {
       controller: 'LogoutCtrl',
       templateUrl: 'partials/login.html'
-    })
-    .when('/topics', {
-      controller: 'TopicCtrl',
-      templateUrl: '/partials/topics.html'
     })
     .when('/home', {
       controller: 'CardsCtrl',

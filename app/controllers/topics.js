@@ -4,4 +4,6 @@ app.controller('TopicCtrl', function($scope, $http, cardFactory) {
   .then((data)=>{
     $scope.topicCard = data.topics;
   })
+
+  $scope.searchInput = ""
 })
