@@ -13,6 +13,8 @@ app.controller('RegisterCtrl', function ($scope, $location, regFactory) {
     }
 })
 
+
+
 // register factory
 .factory('regFactory', ($q) => {
     return {
@@ -25,3 +27,4 @@ app.controller('RegisterCtrl', function ($scope, $location, regFactory) {
       }
     }
   })
+
