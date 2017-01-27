@@ -1,6 +1,6 @@
 
 console.log('controller')
-app.controller('LoginCtrl', function ($scope, $location, authFactory) {
+app.controller('LoginCtrl', function ($scope, $location, $route, authFactory) {
 
 // sign in controller
     $scope.login = () => {
@@ -12,6 +12,7 @@ app.controller('LoginCtrl', function ($scope, $location, authFactory) {
       })
     }
   })
+
 
 // sign in factory
 .factory('authFactory', ($q) => {
@@ -25,3 +26,8 @@ app.controller('LoginCtrl', function ($scope, $location, authFactory) {
       }
     }
   })
+// log out button clear data and re-route
+app.controller('LogoutController',function($location, $scope){
+    $window.localStorage.clear();
+    $location.path('/');
+});
