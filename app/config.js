@@ -31,10 +31,10 @@ const checkForAuth = {
       controller: 'LoginCtrl',
       templateUrl: '/partials/login.html'
     })
-    .when('/topics', {
-      controller: 'TopicCtrl',
-      templateUrl: '/partials/topics.html'
-    })
+    // .when('/topics', {
+    //   controller: 'TopicCtrl',
+    //   templateUrl: '/partials/topics.html'
+    // })
     .when('/home', {
       controller: 'CardsCtrl',
       templateUrl: '/partials/cards.html'
@@ -49,4 +49,3 @@ const checkForAuth = {
     })
     .otherwise({redirectTo: '/' })
 })
-
