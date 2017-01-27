@@ -12,6 +12,22 @@ firebase.initializeApp({
     messagingSenderId: "390130747860"
     })
 
+
+//   // sending register info to firebase
+// firebase.auth().createUserWithEmailAndPassword(email, password)
+//     .catch(function(error) {
+//   // Handle Errors here.
+//   var errorCode = error.code;
+//   var errorMessage = error.message;
+//   if (errorCode == 'auth/weak-password') {
+//     alert('The password is too weak.');
+//   } else {
+//     alert(errorMessage);
+//   }
+//   console.log(error);
+// });
+
+
 // checking for auth
 const checkForAuth = {
       checkForAuth ($location) {
@@ -31,9 +47,13 @@ const checkForAuth = {
       controller: 'LoginCtrl',
       templateUrl: '/partials/login.html'
     })
-    .when('/topics', {
-      controller: 'TopicCtrl',
-      templateUrl: '/partials/topics.html'
+    // .when('/topics', {
+    //   controller: 'TopicCtrl',
+    //   templateUrl: '/partials/topics.html'
+    // })
+    .when('/logout', {
+      controller: 'LogoutCtrl',
+      templateUrl: 'partials/login.html'
     })
     .when('/home', {
       controller: 'CardsCtrl',
@@ -49,4 +69,3 @@ const checkForAuth = {
     })
     .otherwise({redirectTo: '/' })
 })
-
